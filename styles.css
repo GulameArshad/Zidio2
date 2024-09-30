@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: grey;
+}
+.icon-button:hover .icon {
+    fill: orangered; 
+}
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.top-bar {
+    background:  linear-gradient(120deg,  rgb(49, 66, 195) 50%,rgb(3, 3, 54) 50%);
+    color: white;
+    padding: 10px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hero-thumb{
+   position:relative;
+   height: 100vh;
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+
+}
+.background{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+.gif {
+        width: 100px;
+        top: 20%;
+        left: 15%;
+        height: auto;
+        position: relative;
+        margin-left: 40%;
+        animation: spin 5s linear infinite; 
+    }
+    
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+
+.hero-image {
+    position: absolute;
+    z-index: 1;
+    max-width: 40%; 
+    width: 100%;
+    height: 100%;
+    margin-left: 52%; 
+    display:block;
+}
+.top-bar {
+    background: linear-gradient(120deg, rgb(58, 56, 206) 50%, navy 50%);
+    color: white;
+    padding: 2px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left-section, .right-section {
+    flex: 1;
+}
+
+.left-section {
+    text-align: left;
+}
+
+.right-section {
+    text-align: right;
+}
+
+.top-bar a {
+    color: rgb(227, 227, 236);
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.top-bar a:hover {
+    color: navy;
+}
+
+header {
+    background-color: white;
+    color: rgb(43, 48, 100);
+    text-align: center;
+    padding: 1em;
+}
+.logo{
+    width:150px;
+    height:auto;
+    margin-right: 20px;
+    vertical-align:left;
+}
+.referals{
+    width:50px;
+    height:auto;
+    margin-right: 50px;
+    vertical-align:right;
+}
+
+a{
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.info-blocks {
+    display: flex;
+    justify-content: space-around; 
+    padding: 40px 0;
+    background-color: #f1f1f1;
+}
+
+.block {
+    display: flex;
+    align-items:center ;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    width: 20%;
+    height: 200px;
+    box-shadow: 0 4px 6px rgba(8, 24, 106, 0.1);
+    background: linear-gradient(to bottom, lightblue 0%, lightblue 100%);
+    background-size:100% 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease;
+}
+
+.block h3 {
+    font-size: 20px;
+    margin:0%;
+    text-align: center;
+    color: rgb(12, 12, 12);
+}
+.block:hover {
+    background-color:rgb(7, 7, 58);
+    background-size: 100% 100%;
+}
+.para{
+    margin-top: 10px; 
+    text-align: center; 
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 20px;
+    height: 10%;
+    margin-left: 0%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+header nav a {
+    color: rgb(83, 88, 152);
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h1, h2 {
+    color: #604aa8;
+}
+
+.timeline, .team-profiles, .achievements-gallery, .job-listings, .reviews {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.timeline-item, .profile, .achievement, .job, .review {
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+.custom-button {
+    position: relative;
+    z-index: 1; 
+    margin: 20px; 
+}
+
+.custom-button:first-child {
+    margin-left: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}
+
+.custom-button {
+    background-color:darkblue;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.custom-button {
+    position: relative;
+    z-index: 1; 
+    margin: 30px; 
+}
+
+.custom-button:first-child {
+    margin-left: 30px; 
+}
+
+.custom-button:hover {
+    background-color:skyblue;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav a, .custom-button {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-bar p, .top-bar a {
+        font-size: 14px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    .custom-button {
+        padding: 8px 16px;
+    }
+}
